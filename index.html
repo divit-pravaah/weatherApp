@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My WeatherApp</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="date">
+            <h1 id="dateDay">2, Monday</h1>
+            <h6 id="yearMonth">2024 September</h6>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Enter the location to search" />
+            <div><img id ="searchbtn"src="img/search.png" alt="" /></div>
+        </div>
+    </div>
+
+    <div class="upperbox-wrapper">
+        <div class="upperbox">
+            <div class="temp">
+                <img id="currentWeatherImg" src="img/sun.png">
+                <div class="tempdetails">
+                    <h1 id="currentTemp">data</h1>
+                    <h5 id="skyWeather"> data</h5>
+                </div>
+            </div>
+            <div class="other-details">
+                <div class="inline-details">
+                    <img src="img/humidity.png" alt="">
+                    <span id="humidity"> data</span>
+                </div>
+                <div class="inline-details">
+                    <img src="img/wind.png" alt="">
+                    <span id="windSpeed"> data</span>
+                </div>
+                <div class="inline-details">
+                    <img src="img/hot.png" alt="">
+                    <span id="dayHL">data</span>
+                </div>
+            </div>
+            <div class="more-details">
+                <h2 id="locate">Your_Location</h2>
+                <span id="currentTime">Current_Time</span>
+                <div class="update"><span>Last updated : <span id="refreshTime"> Just Now </span> </span> <img id="refresh" src="img/loading.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="next-week-wrapper">
+        <div class="nw">
+            <div class="upcoming-forecast">
+                <h1>Upcoming Forecast</h1>
+            </div>
+            <div class="next-week">
+                <div class="card-wrapper">
+                    <div class="card">
+                        <h2 id="t1"> Tue, 2 Sep</h2>
+                        <img id="t1Img" src="img/sun.png">
+                        <h6 id="t1Weather"> data</h6>
+                        <div class="card-last-line">
+                            <img src="img/hot.png" alt="">
+                            <span id="t1HL"> data</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2 id="t2"> Tue, 2 Sep</h2>
+                        <img id="t2Img" src="img/sun.png">
+                        <h6 id="t2Weather"> data</h6>
+                        <div class="card-last-line">
+                            <img src="img/hot.png" alt="">
+                            <span id="t2HL"> data</span>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <h2 id="t3"> Tue, 2 Sep</h2>
+                        <img id="t3Img" src="img/sun.png">
+                        <h6 id="t3Weather"> data</h6>
+                        <div class="card-last-line">
+                            <img src="img/hot.png" alt="">
+                            <span id="t3HL"> data</span>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <h2 id="t4"> Tue, 2 Sep</h2>
+                        <img id="t4Img" src="img/sun.png">
+                        <h6 id="t4Weather"> data</h6>
+                        <div class="card-last-line">
+                            <img src="img/hot.png" alt="">
+                            <span id="t4HL"> data</span>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <h2 id="t5"> Tue, 2 Sep</h2>
+                        <img id="t5Img" src="img/sun.png">
+                        <h6 id="t5Weather"> data</h6>
+                        <div class="card-last-line">
+                            <img src="img/hot.png" alt="">
+                            <span id="t5HL"> data</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <script src="script.js"></script>
+         <!-- <script src="try.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+    font-family: 'Rubik' , sans-serif;
+    align-items: center;
+}
+
+.navbar{
+    /* background-color: red; */
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h1{
+    text-align: left;
+    font-size: 3rem;
+    font-family: 'Rubik' , sans-serif;
+    font-weight: 400;
+
+}
+.date{
+    /* background-color: blue; */
+    display: inline-block;
+
+    /* text-align: center; */
+    margin-left: 5.5vw;
+}
+.search{
+    margin: 5vw;
+    display: flex;
+}
+
+.navbar h6{
+    /* background-color: yellow; */
+    color: #fff;
+    font-family: 'Rubik' , sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+
+}
+.search input{
+    outline: none;
+    padding-left: 10px;
+    border-radius: 20px;
+    border: 2px black solid;
+    font-size: 1rem;
+    height: 5vh;
+    width: 25vw;
+    /* padding: 5px; */
+    background-color: lightblue;
+    font-family: 'Roboto' , sans-serif;
+    
+}
+input:focus::placeholder{
+    color: transparent;
+    transition: 0.2s ;
+}
+.search img{
+    width: 5vh;
+    height: 5vh;
+    border: none;
+    border-radius: 20px ;
+    margin-left: 1vw;
+    padding: 10px;
+    background-color: rgb(80, 147, 228);
+    /* background-size: 50px; */
+    cursor: pointer;
+}
+
+.upperbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 20vh;
+    margin-top: 5vh;
+    width: 90vw;
+
+}
+.upperbox-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* height: 25vh; */
+}
+.temp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    /* height: 75px; */
+    
+}
+
+.temp img{
+    height: 75px;
+    width: 75px;
+    margin-right: 1.5vw;
+}
+.temp h5{
+    color: lightgray;
+    /* text-align: center; */
+}
+.other-details{
+    width: 30vw;
+    position: relative;
+}
+.other-details img{
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.inline-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.other-details span{
+    font-size: 1rem;
+    width: 10vw;
+    color: lightgray;
+}
+.more-details :nth-child(2){
+    color: lightgray;
+}
+.more-details :nth-child(3){
+    display: block;
+    color: lightgray;
+}
+.more-details{
+    text-align: center;
+    width: 30vw;
+}
+.update{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#currentTime{
+    font-size: 1.1rem;
+}
+.update span{
+    font-size: 1.1rem;
+}
+#refresh{
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+    cursor: pointer;
+
+}
+  
+.next-week-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.nw{
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 50vh;
+    width: 90vw;
+}
+.upcoming-forecast h1{
+    margin-left: 2vw;
+    margin-top: 3vh;
+    font-family: 'Rubik';
+    font-weight: 500;
+}
+
+
+.card {
+    background-color: rgb(247, 249, 254);
+    height: 35vh;
+    margin-top: 2vh;
+    width: 15vw;
+    text-align: center;
+    padding-top: 3vh;
+    border-radius:20px;
+}
+.card img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 15vh;
+    height: 15vh;
+}
+.card h6{
+    font-size: 1.2rem;
+    margin-bottom: 1vh;
+    font-weight: 500;
+}
+.card-wrapper{
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.card-last-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-last-line img{
+    height: 25px;
+    width: 25px;
+}
+
+.card span{
+    color:lightgray;
+}
+
+
+#dayImg{
+    visibility: visible;
+}
